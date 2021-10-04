@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Word Guess Form</h1>
+<form id="word-guess" method="POST" class="add-word">
+    <label for="word-guess">Submit a guess!</label>
+    <input type="text" name="word-guess-input" id="word-guess-input">
+    <button id="word-guess">Submit!!</button>
+</form>
+
+<h1>Current Score</h1>
+<container id="score">
+    <h1>
+        <!-- Score -->
+    </h1>
+</container>
+<p>
+    Score: <b class="score">0</b>
+    Seconds Left: <b class="timer"></b>
+</p>
+
+{% endblock %}
